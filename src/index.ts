@@ -10,6 +10,7 @@ import router from '../src/router';
 const app = express();
 
 app.use(cors({
+    origin: 'http://localhost:5173', // Allow requests from this origin
     credentials: true,
 }));
 
